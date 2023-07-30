@@ -1,7 +1,7 @@
 --- # Debugging
 -   hosts: '{{ myHosts }}'
     vars:
-        myHosts: master
+        myHosts: all
         pkg: telnet
     tasks:
     - name: Install telnet server on centos
