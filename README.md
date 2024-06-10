@@ -16,7 +16,7 @@ Ansible : Opensource
 	tower
 	Vault
 	
-Master :
+	Master :
 	     	  ssh-keygen
        
 		  /root/ssh/id_rsa.pub
