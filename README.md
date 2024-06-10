@@ -47,9 +47,15 @@ vi /etc/ansible/hosts  -> inventory File
 
 
 Ad-hoc:
+
 ansible agents -m ping
+
 ansible agents -m yum -a "name=git state=present"
+
 ansible agents -m copy -a "src=/opt/abc.txt dest=/opt/abc.txt"
+
 ansible agents -m yum -a "name=httpd state=absent"
+
 ansible agents -m service -a "name=httpd state=started"
+
 ansible agents -m service -a "name=httpd state=stopped"
