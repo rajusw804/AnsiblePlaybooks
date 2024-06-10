@@ -17,7 +17,8 @@ Ansible : Opensource
 	Vault
 	
 Master :
-	      ssh-keygen
+	     	  ssh-keygen
+       
 		  /root/ssh/id_rsa.pub
 		  
 		  sudo amazon-linux-extras install epel
@@ -28,7 +29,9 @@ Master :
 		  
 		  
 	Agent:
-	      /root/ssh/authrozied_keys
+ 	      ssh-keygen
+	
+	      copy  master /root/ssh/id_rsa.pub to agent's /root/ssh/authrozied_keys
 		  
 vi /etc/ansible/ansible.cfg  -> Main configuration File
 
