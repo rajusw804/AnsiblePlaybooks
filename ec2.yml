@@ -5,7 +5,7 @@
   vars:
     keypair: test123
     instance_type: t2.micro
-    image: "ami-0b72821e2f351e396"
+    image: "ami-01fccab91b456acc2"
     region: us-east-1
     user_access_key: "xxxxxxxxxxxxxx"
     user_secret_key: "xxxxxxxxxxxxxxxx"
