@@ -3,10 +3,10 @@
   connection: local
   gather_facts: False
   vars:
-    keypair: ansibletest
+    keypair: test123
     instance_type: t2.micro
-    image: "ami-04708942c263d8190"
-    region: ap-south-1
+    image: "ami-0b72821e2f351e396"
+    region: us-east-1
     user_access_key: "xxxxxxxxxxxxxx"
     user_secret_key: "xxxxxxxxxxxxxxxx"
 
