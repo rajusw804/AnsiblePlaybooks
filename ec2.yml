@@ -1,4 +1,4 @@
----  #  install pip -y && pip install boto
+---  #  yum install pip -y && pip install boto
 - hosts: localhost
   connection: local
   gather_facts: False
