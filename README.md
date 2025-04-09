@@ -42,7 +42,9 @@ remove # before above 2 lines
 
 
 vi /etc/ansible/hosts  -> inventory File
+
 [agents]
+
 13.234.119.49 ansible_user=root
 
 
