@@ -1,9 +1,11 @@
 --- # Install http server and Deploy the Html File
 -   hosts: master
+    vars: 
+      package: httpd
     tasks: 
     - name: Install Apache Server
       yum:
-        name: httpd
+        name: {{package}}
         state: present
       notify:
       - startservice
@@ -19,5 +21,5 @@
     handlers:
     - name: startservice
       service:
-        name: httpd
+        name: {{package}}
         state: restarted
