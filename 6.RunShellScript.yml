@@ -1,4 +1,4 @@
----
+---  # ansible-playbook 6.RunShellScript.yml --limit 52.55.100.28
 - name: Create and run hostname.sh script
   hosts: agents
   become: true
