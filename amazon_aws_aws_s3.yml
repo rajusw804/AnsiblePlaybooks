@@ -12,7 +12,7 @@
   tasks:
     - name: Create S3 bucket
       amazon.aws.aws_s3:
-        name: "{{ s3_bucket_name }}"
+        bucket: "{{ s3_bucket_name }}"
         mode: create
         region: "{{ aws_region }}"
         aws_access_key: "{{ aws_access_key }}"
