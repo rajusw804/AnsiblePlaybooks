@@ -1,7 +1,18 @@
---- # Upload the Shell Script to Remote Host and Run it.
--  hosts: agents
-   tasks: 
-   -  name: Run the program
+---
+- name: Create and run hostname.sh script
+  hosts: agents
+  become: true
+  tasks:
+    - name: Create hostname.sh script using shell (touch and echo)
+      shell: |
+        echo "#!/bin/bash" > /opt/hostname.sh
+        echo "hostname" >> /opt/hostname.sh
+        chmod +x /opt/hostname.sh
+
+    - name: Run the shell script
       shell: /opt/hostname.sh
       register: result
-   -  debug: msg="stdout={{ result }}"
+
+    - name: Show result stdout
+      debug:
+        msg: "stdout={{ result.stdout }}"
