@@ -1,5 +1,5 @@
 --- # Multiple Tasks on Multiple Servers in Single Playbook
-- hosts: Master
+- hosts: master
   tasks:
   - name: Install httpd on centos Servers
     yum: pkg=lynx state=installed update_cache=true
