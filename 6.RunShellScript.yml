@@ -1,5 +1,5 @@
 --- # Upload the Shell Script to Remote Host and Run it.
--  hosts: master
+-  hosts: agents
    tasks: 
    -  name: Run the program
       shell: /opt/hostname.sh
