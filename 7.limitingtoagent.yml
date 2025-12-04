@@ -1,0 +1,11 @@
+---
+- hosts: agents
+  tasks:
+    - name: This runs on all agents
+      debug:
+        msg: "This is {{ inventory_hostname }}"
+
+    - name: This runs only on the 2nd agent
+      debug:
+        msg: "Hello from agent2 only!"
+      when: inventory_hostname == '52.55.100.28'
